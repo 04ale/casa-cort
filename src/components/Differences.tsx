@@ -25,46 +25,47 @@ const differences = [
 
 const Differences = () => {
   return (
-    <section id="diferenciais" className="bg-secondary/30 py-24 lg:py-32">
+    <section id="diferenciais" className="bg-background py-24 lg:py-40">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="mb-20 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-end">
+        <div className="mb-24 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-end">
           <div>
-            <div className="mb-6 inline-block rounded-full bg-primary/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary">
-              Nossos Valores
+            <div className="mb-8 inline-block rounded-full bg-cta/10 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.3em] text-cta border border-cta/20">
+              DNA de Exclusividade
             </div>
-            <h2 className="font-heading text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
-              O Padrão de Qualidade da <span className="text-primary italic">Casa Cort</span>
+            <h2 className="font-heading text-5xl font-bold text-foreground md:text-7xl lg:text-8xl leading-tight">
+              O Padrão de Luxo <br />
+              <span className="text-cta italic font-light">Casa Cort</span>
             </h2>
           </div>
-          <div className="lg:pb-2">
-            <p className="max-w-xl font-sans text-lg text-muted-foreground">
-              Muito além de simples cortinas, oferecemos uma experiência completa de design 
-              que une tradição têxtil com a mais alta tecnologia de automação.
+          <div className="lg:pb-4">
+            <p className="max-w-xl font-sans text-xl text-muted-foreground leading-relaxed">
+              Elevamos a experiência de decoração a um novo patamar, onde a tradição do toque 
+              artesanal encontra a inovação tecnológica mais avançada do mercado.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {differences.map((item, index) => (
             <div 
               key={index} 
-              className="group relative flex flex-col items-start rounded-[2rem] bg-background p-10 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)]"
+              className="glass-card group p-10 hover:border-cta/20"
             >
               {/* Icon Container */}
-              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/5 text-primary transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
-                <item.icon className="h-8 w-8" />
+              <div className="mb-10 flex h-20 w-20 items-center justify-center rounded-3xl bg-primary/5 text-primary transition-all duration-700 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground group-hover:rotate-6 shadow-sm group-hover:shadow-primary/20">
+                <item.icon className="h-10 w-10" />
               </div>
 
-              <h3 className="mb-4 font-heading text-xl font-bold text-foreground">
+              <h3 className="mb-6 font-heading text-2xl font-bold text-foreground tracking-tight">
                 {item.title}
               </h3>
               
-              <p className="font-sans text-sm leading-relaxed text-muted-foreground">
+              <p className="font-sans text-base leading-relaxed text-muted-foreground/80">
                 {item.description}
               </p>
 
               {/* Decorative accent */}
-              <div className="absolute right-8 top-8 h-2 w-2 rounded-full bg-primary/20 opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="absolute right-10 bottom-10 h-1 w-1 rounded-full bg-cta/30 transition-all duration-700 group-hover:w-12 group-hover:bg-cta" />
             </div>
           ))}
         </div>

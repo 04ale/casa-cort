@@ -35,26 +35,26 @@ const Facebook = ({ className }: { className?: string }) => (
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-50 pt-24 pb-12 border-t border-neutral-200">
+    <footer className="bg-background pt-24 pb-12 border-t border-foreground/5">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="flex flex-col items-start">
-            <h2 className="font-heading text-2xl font-bold text-foreground tracking-tight">
-              CASA <span className="text-primary italic">CORT</span>
+            <h2 className="font-heading text-3xl font-bold text-foreground tracking-tight">
+              CASA <span className="text-cta italic font-light">CORT</span>
             </h2>
-            <p className="mt-6 font-sans text-sm leading-relaxed text-muted-foreground max-w-[280px]">
-              Elegância que inspira e transforma ambientes. 
-              Especialistas em soluções sob medida com design de alto padrão e tecnologia.
+            <p className="mt-8 font-sans text-base leading-relaxed text-muted-foreground/80 max-w-[280px]">
+              Elegância que inspira e transforma ambientes exclusivos. 
+              Referência em design de interiores e automação de luxo.
             </p>
-            <div className="mt-8 flex gap-4">
-              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-foreground shadow-[0_2px_10px_rgba(0,0,0,0.05)] transition-all hover:scale-110 hover:bg-primary hover:text-white">
+            <div className="mt-10 flex gap-5">
+              <a href="#" className="flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground/5 text-foreground transition-all duration-500 hover:scale-110 hover:bg-cta hover:text-white hover:rotate-6 shadow-sm">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-foreground shadow-[0_2px_10px_rgba(0,0,0,0.05)] transition-all hover:scale-110 hover:bg-primary hover:text-white">
+              <a href="#" className="flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground/5 text-foreground transition-all duration-500 hover:scale-110 hover:bg-cta hover:text-white hover:-rotate-6 shadow-sm">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-foreground shadow-[0_2px_10px_rgba(0,0,0,0.05)] transition-all hover:scale-110 hover:bg-primary hover:text-white">
+              <a href="#" className="flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground/5 text-foreground transition-all duration-500 hover:scale-110 hover:bg-cta hover:text-white hover:rotate-6 shadow-sm">
                 <MessageCircle className="h-5 w-5" />
               </a>
             </div>
@@ -62,55 +62,55 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading text-lg font-bold text-foreground">Explore</h3>
-            <ul className="mt-6 space-y-4 font-sans text-sm">
-              <li><Link to="/#home" className="text-muted-foreground transition-colors hover:text-primary">Início</Link></li>
-              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-primary">Coleções</Link></li>
-              <li><Link to="/#diferenciais" className="text-muted-foreground transition-colors hover:text-primary">Diferenciais</Link></li>
-              <li><Link to="/#processo" className="text-muted-foreground transition-colors hover:text-primary">Como Funciona</Link></li>
-              <li><Link to="/#depoimentos" className="text-muted-foreground transition-colors hover:text-primary">Depoimentos</Link></li>
+            <h3 className="font-heading text-xl font-bold text-foreground mb-8">Navegação</h3>
+            <ul className="space-y-4 font-sans text-sm">
+              <li><Link to="/#home" className="text-muted-foreground transition-colors hover:text-cta font-medium">Início</Link></li>
+              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-cta font-medium">Coleções</Link></li>
+              <li><Link to="/#diferenciais" className="text-muted-foreground transition-colors hover:text-cta font-medium">Diferenciais</Link></li>
+              <li><Link to="/#processo" className="text-muted-foreground transition-colors hover:text-cta font-medium">Como Funciona</Link></li>
+              <li><Link to="/#depoimentos" className="text-muted-foreground transition-colors hover:text-cta font-medium">Depoimentos</Link></li>
             </ul>
           </div>
 
           {/* Categories Links */}
           <div>
-            <h3 className="font-heading text-lg font-bold text-foreground">Coleções</h3>
-            <ul className="mt-6 space-y-4 font-sans text-sm">
-              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-primary">Cortinas de Tecido</Link></li>
-              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-primary">Cortinas Blackout</Link></li>
-              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-primary">Persianas Rolô</Link></li>
-              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-primary">Persianas Horizontais</Link></li>
-              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-primary">Automação</Link></li>
+            <h3 className="font-heading text-xl font-bold text-foreground mb-8">Soluções</h3>
+            <ul className="space-y-4 font-sans text-sm">
+              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-cta font-medium">Cortinas de Tecido</Link></li>
+              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-cta font-medium">Cortinas Blackout</Link></li>
+              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-cta font-medium">Persianas Rolô</Link></li>
+              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-cta font-medium">Persianas Horizontais</Link></li>
+              <li><Link to="/#categorias" className="text-muted-foreground transition-colors hover:text-cta font-medium">Automação Residencial</Link></li>
             </ul>
           </div>
 
           {/* Contact Column */}
           <div>
-            <h3 className="font-heading text-lg font-bold text-foreground">Atendimento</h3>
-            <ul className="mt-6 space-y-5 font-sans text-sm text-muted-foreground">
-              <li className="flex items-start gap-4">
-                <MapPin className="h-5 w-5 shrink-0 text-primary mt-0.5" />
-                <span className="leading-relaxed">Av. das Américas, 500<br />Barra da Tijuca, RJ</span>
+            <h3 className="font-heading text-xl font-bold text-foreground mb-8">Atendimento</h3>
+            <ul className="space-y-6 font-sans text-sm text-muted-foreground">
+              <li className="flex items-start gap-4 group">
+                <MapPin className="h-5 w-5 shrink-0 text-cta mt-0.5 transition-transform group-hover:scale-110" />
+                <span className="leading-relaxed group-hover:text-foreground transition-colors">Av. das Américas, 500<br />Barra da Tijuca, RJ</span>
               </li>
-              <li className="flex items-center gap-4">
-                <Phone className="h-5 w-5 shrink-0 text-primary" />
-                <span>(21) 98765-4321</span>
+              <li className="flex items-center gap-4 group">
+                <Phone className="h-5 w-5 shrink-0 text-cta transition-transform group-hover:scale-110" />
+                <span className="group-hover:text-foreground transition-colors font-medium">(21) 93228-9158</span>
               </li>
-              <li className="flex items-center gap-4">
-                <Mail className="h-5 w-5 shrink-0 text-primary" />
-                <span>contato@casacort.com.br</span>
+              <li className="flex items-center gap-4 group">
+                <Mail className="h-5 w-5 shrink-0 text-cta transition-transform group-hover:scale-110" />
+                <span className="group-hover:text-foreground transition-colors font-medium">contato@casacort.com.br</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-20 border-t border-neutral-200 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="font-sans text-[10px] text-muted-foreground uppercase tracking-[0.2em] text-center md:text-left">
-            © 2026 CASA CORT. TODOS OS DIREITOS RESERVADOS.
+        <div className="mt-24 border-t border-foreground/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
+          <p className="font-sans text-[10px] text-muted-foreground/50 uppercase tracking-[0.5em] text-center md:text-left font-bold">
+            © 2026 CASA CORT. LUXURY CURTAINS & DESIGN.
           </p>
-          <p className="font-sans text-[10px] text-muted-foreground uppercase tracking-[0.2em]">
-            DESIGN BY <span className="text-foreground font-bold">PRO MAX STUDIO</span>
+          <p className="font-sans text-[10px] text-muted-foreground/50 uppercase tracking-[0.5em] font-bold">
+            CRAFTED BY <span className="text-foreground/80">UI PRO MAX</span>
           </p>
         </div>
       </div>
