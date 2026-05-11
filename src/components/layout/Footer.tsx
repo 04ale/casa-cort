@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 
 const Instagram = ({ className }: { className?: string }) => (
-  <svg 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className={className}
   >
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -19,13 +19,13 @@ const Instagram = ({ className }: { className?: string }) => (
 );
 
 const Facebook = ({ className }: { className?: string }) => (
-  <svg 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className={className}
   >
     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -44,7 +44,7 @@ const Footer = () => {
               CASA <span className="text-cta italic font-light">CORT</span>
             </h2>
             <p className="mt-8 font-sans text-base leading-relaxed text-muted-foreground/80 max-w-[280px]">
-              Elegância que inspira e transforma ambientes exclusivos. 
+              Elegância que inspira e transforma ambientes exclusivos.
               Referência em design de interiores e automação de luxo.
             </p>
             <div className="mt-10 flex gap-5">
@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="space-y-6 font-sans text-sm text-muted-foreground">
               <li className="flex items-start gap-4 group">
                 <MapPin className="h-5 w-5 shrink-0 text-cta mt-0.5 transition-transform group-hover:scale-110" />
-                <span className="leading-relaxed group-hover:text-foreground transition-colors">Av. das Américas, 500<br />Barra da Tijuca, RJ</span>
+                <span className="leading-relaxed group-hover:text-foreground transition-colors">Av. São João, 500<br />Atibaia, SP</span>
               </li>
               <li className="flex items-center gap-4 group">
                 <Phone className="h-5 w-5 shrink-0 text-cta transition-transform group-hover:scale-110" />
@@ -107,10 +107,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-24 border-t border-foreground/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="font-sans text-[10px] text-muted-foreground/50 uppercase tracking-[0.5em] text-center md:text-left font-bold">
-            © 2026 CASA CORT. LUXURY CURTAINS & DESIGN.
+            © {new Date().getFullYear()} CASA CORT. LUXURY CURTAINS & DESIGN.
           </p>
           <p className="font-sans text-[10px] text-muted-foreground/50 uppercase tracking-[0.5em] font-bold">
-            CRAFTED BY <span className="text-foreground/80">UI PRO MAX</span>
+            CREATED BY <a href="https://rhema-tech.vercel.app" target="_blank" rel="noopener noreferrer" className="text-foreground/80">RHEMATECH</a>
           </p>
         </div>
       </div>
