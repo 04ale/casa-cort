@@ -1,41 +1,47 @@
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import cor1 from "@/assets/tecido.webp";
+import cor2 from "@/assets/blackout.webp";
+import cor3 from "@/assets/rolô.webp";
+import cor4 from "@/assets/horizontal.webp";
+import cor5 from "@/assets/motorizada.webp";
+import cor6 from "@/assets/corporativa.webp";
 
 const categories = [
   {
     title: "Cortinas de Tecido",
     description: "Leveza e sofisticação em tecidos nobres para transformar sua sala ou quarto.",
-    image: "/src/assets/categories/fabric.png",
+    image: cor1,
     link: "#fabric",
   },
   {
     title: "Cortinas Blackout",
     description: "Bloqueio total de luminosidade com elegância e conforto térmico absoluto.",
-    image: "/src/assets/categories/blackout.png",
+    image: cor2,
     link: "#blackout",
   },
   {
     title: "Persianas Rolô",
     description: "Design minimalista e funcionalidade para ambientes modernos e práticos.",
-    image: "/src/assets/categories/roller.png",
+    image: cor3,
     link: "#roller",
   },
   {
     title: "Persianas Horizontais",
     description: "Controle preciso de luz e privacidade com materiais de alta durabilidade.",
-    image: "/src/assets/categories/horizontal.png",
+    image: cor4,
     link: "#horizontal",
   },
   {
     title: "Persianas Motorizadas",
     description: "Conforto e tecnologia na ponta dos dedos com automação silenciosa e integrada.",
-    image: "/src/assets/categories/motorized.png",
+    image: cor5,
     link: "#motorized",
   },
   {
     title: "Cortinas Corporativas",
     description: "Soluções profissionais para escritórios, aliando estética e produtividade.",
-    image: "/src/assets/categories/corporate.png",
+    image: cor6,
     link: "#corporate",
   },
 ];

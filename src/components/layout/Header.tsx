@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Menu, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/theme/mode-toggle"
 import {
     Sheet,
     SheetContent,
@@ -22,7 +21,6 @@ const navItems = [
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
-    const location = useLocation()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,8 +42,8 @@ export default function Header() {
             <nav
                 className={cn(
                     "mx-auto flex max-w-7xl items-center justify-between rounded-full px-6 py-3 transition-all duration-700",
-                    isScrolled 
-                        ? "bg-background/80 shadow-lg shadow-primary/5 border border-primary/10 backdrop-blur-md" 
+                    isScrolled
+                        ? "bg-background/80 shadow-lg shadow-primary/5 border border-primary/10 backdrop-blur-md"
                         : "bg-transparent border border-transparent shadow-none"
                 )}
             >
@@ -78,7 +76,6 @@ export default function Header() {
                 {/* Actions */}
                 <div className="flex items-center gap-2 md:gap-4">
                     <div className="hidden sm:block">
-                        <ModeToggle />
                     </div>
 
                     <Button
@@ -94,9 +91,9 @@ export default function Header() {
                     {/* Mobile Menu */}
                     <Sheet>
                         <SheetTrigger asChild>
-                            <Button 
-                                variant="ghost" 
-                                size="icon" 
+                            <Button
+                                variant="ghost"
+                                size="icon"
                                 className={cn(
                                     "md:hidden rounded-full transition-colors hover:bg-primary/10 text-foreground"
                                 )}
@@ -129,7 +126,6 @@ export default function Header() {
                                 <div className="mt-8 pt-8 border-t border-muted flex flex-col gap-6">
                                     <div className="flex items-center justify-between px-2">
                                         <span className="text-sm text-muted-foreground">Alternar Tema</span>
-                                        <ModeToggle />
                                     </div>
                                     <Button
                                         asChild
