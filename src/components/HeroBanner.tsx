@@ -1,4 +1,5 @@
 import { MessageCircle } from "lucide-react";
+import heroBanner from "@/assets/heroBanner.webp";
 
 const HeroBanner = () => {
   return (
@@ -6,7 +7,7 @@ const HeroBanner = () => {
       {/* Background with Elegant Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/src/assets/heroBanner.webp')" }}
+        style={{ backgroundImage: `url(${heroBanner})` }}
       >
         {/* Liquid Glass Overlay */}
         <div className="absolute inset-0 bg-background/40 lg:bg-linear-to-r lg:from-background lg:via-background/60 lg:to-transparent" />
