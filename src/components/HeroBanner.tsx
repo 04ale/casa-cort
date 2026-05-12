@@ -68,8 +68,8 @@ const HeroBanner = () => {
       </div>
 
       {/* Scroll indicator - Refined */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-40">
-        <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-foreground">Discover</span>
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-40 max-lg:hidden">
+        <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-foreground">Descubra</span>
         <div className="h-16 w-px bg-linear-to-b from-foreground to-transparent" />
       </div>
     </section>
