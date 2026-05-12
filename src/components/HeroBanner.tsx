@@ -46,7 +46,7 @@ const HeroBanner = () => {
             </a>
 
             <a
-              href="#categories"
+              href="#categorias"
               className="btn-premium border border-foreground/10 bg-white/20 backdrop-blur-xl text-foreground hover:bg-white/40 cursor-pointer"
             >
               Explorar Coleções
